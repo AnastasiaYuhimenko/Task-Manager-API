@@ -9,7 +9,6 @@ class UserCreate(BaseModel):
 
     @field_validator("password")
     def password_must_be_strong(cls, value):
-        # Минимальные требования к паролю
         if len(value) < 8:
             raise ValueError("Password must be at least 8 characters long")
         if not re.search(r"\d", value):  # Проверка на наличие хотя бы одной цифры
