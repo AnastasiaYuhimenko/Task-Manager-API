@@ -10,3 +10,4 @@ python-dotenv
 pydantic
 fastapi-cli
 pydantic[email]
+python-multipart

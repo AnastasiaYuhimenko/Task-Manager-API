@@ -5,7 +5,7 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 from dotenv import load_dotenv
 from app.db.database import Base
-from app.models import user
+from app.models import user, task
 
 
 load_dotenv()
